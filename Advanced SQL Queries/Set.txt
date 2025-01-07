@@ -1,0 +1,21 @@
+Set Operations: UNION, INTERSECT, EXCEPT
+   - UNION: Combines the result sets of two queries and removes duplicates.
+     Example :
+       SELECT name FROM employees WHERE department = 'HR'
+       UNION
+       SELECT name FROM employees WHERE department = 'Sales';
+       -- Combines lists of employees from HR and Sales departments, without duplicates.
+
+   - INTERSECT: Returns common results between two queries.
+     Example:
+       SELECT name FROM employees WHERE department = 'Sales'
+       INTERSECT
+       SELECT name FROM employees WHERE salary > 50000;
+       -- Retrieves employees who work in Sales and have a salary greater than 50,000.
+
+   - EXCEPT: Returns records from the first query that aren’t in the second query.
+     Example :
+       SELECT name FROM employees WHERE department = 'Sales'
+       EXCEPT
+       SELECT name FROM employees WHERE salary < 50000;
+       -- Retrieves employees from Sales department with salaries greater than or equal to 50,000.

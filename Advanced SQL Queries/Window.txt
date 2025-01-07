@@ -1,0 +1,36 @@
+Window Functions: 
+   - ROW_NUMBER(): Assigns a unique number to each row in the result set.
+     Example:
+       SELECT name, salary, ROW_NUMBER() OVER (ORDER BY salary DESC) AS rank
+       FROM employees;
+       //Ranks employees by salary from highest to lowest.
+
+   - RANK(): Similar to ROW_NUMBER(), but assigns the same rank to duplicate values.
+     Example :
+       SELECT name, salary, RANK() OVER (ORDER BY salary DESC) AS rank
+       FROM employees;
+       //Ranks employees by salary, with ties for the same salary.
+
+   - DENSE_RANK(): Similar to RANK(), but without gaps in the ranking for ties.
+     Example :
+       SELECT name, salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rank
+       FROM employees;
+       //Ranks employees with no gaps for tied salaries.
+
+   - NTILE(): Divides the result set into a specified number of groups (or tiles).
+     Example :
+       SELECT name, salary, NTILE(4) OVER (ORDER BY salary DESC) AS salary_quartile
+       FROM employees;
+       //Divides employees into 4 groups based on their salary.
+
+   - LAG(): Returns the value of a previous row in the result set.
+     Example :
+       SELECT name, salary, LAG(salary) OVER (ORDER BY salary DESC) AS previous_salary
+       FROM employees;
+       // Shows each employee's salary along with the salary of the previous employee.
+
+   - LEAD(): Returns the value of a subsequent row in the result set.
+     Example :
+       SELECT name, salary, LEAD(salary) OVER (ORDER BY salary DESC) AS next_salary
+       FROM employees;
+       // Shows each employee's salary along with the salary of the next employee.
