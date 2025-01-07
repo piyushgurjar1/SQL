@@ -1,0 +1,16 @@
+Data Manipulation Language (DML):
+   - SELECT: Retrieves data from one or more tables.
+     Example:
+       SELECT * FROM users;  // Get all data from users table
+
+   - INSERT: Adds new data pr say a row into a table.
+     Example:
+       INSERT INTO users (id, name, age) VALUES (1, 'Piyush', 25);
+
+   - UPDATE: Modifies existing data in a table.
+     Example:
+       UPDATE users SET age = 26 WHERE id = 1;
+
+   - DELETE: Removes data or rows from a table.
+     Example:
+       DELETE FROM users WHERE id = 1;

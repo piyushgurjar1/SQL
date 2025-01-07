@@ -1,0 +1,12 @@
+Transaction Control Language (TCL): 
+   - BEGIN: Starts a transaction
+     Example:
+       BEGIN;
+
+   - COMMIT: Saves the changes made in the transaction.ush
+     Example: 
+       COMMIT;
+
+   - ROLLBACK: Reverts changes made in the current transaction.
+     Example: 
+       ROLLBACK;

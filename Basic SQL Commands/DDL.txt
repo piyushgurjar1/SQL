@@ -1,0 +1,16 @@
+Data Definition Language (DDL): 
+   - CREATE: Used to create a new table or database.
+     Example: 
+       CREATE TABLE users (id INT, name VARCHAR(50), age INT);
+
+   - ALTER: Used to modify an existing table like adding or removing columns.
+     Example: 
+       ALTER TABLE users ADD email VARCHAR(100);
+
+   - DROP: Deletes a table or database permanently.
+     Example: 
+       DROP TABLE users;
+
+
+
+

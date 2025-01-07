@@ -1,0 +1,30 @@
+Relational Database Fundamentals
+
+1. Database Design Concepts:
+   - Involves planning how data will be structured and stored in a relational database.
+   - Key components include entities, relationships, and constraints.
+
+2. Entity-Relationship (ER) Model:
+   - A diagrammatic method for representing data and their relationships.
+   - Entities represent objects or things, while relationships show how entities are connected.
+
+3. Tables, Rows, and Columns:
+   - Tables store data in a relational database, organized into rows (records) and columns (attributes).
+   - Each row represents a single record, and each column represents a data attribute.
+
+4. Primary Keys and Foreign Keys:
+   - Primary Key: Uniquely identifies each record in a table.
+   - Foreign Key: A field in one table that links to the primary key of another table, establishing a relationship.
+
+5. Normalization (1NF, 2NF, 3NF, BCNF):
+   - Process of organizing data to reduce redundancy and dependency.
+     - 1NF: Ensures that all columns contain atomic values.
+     - 2NF: Ensures no partial dependency on the primary key.
+     - 3NF: Eliminates transitive dependencies (non-key attributes dependent on other non-key attributes).
+     - BCNF: For every dependency X -> Y, X is a superkey or a candidate key.
+             X -> Y is a trivial functional dependency
+
+6. Denormalization and When to Use It:
+   - Denormalization involves combining tables to improve read performance.
+   - Used when performance is prioritized over strict normalization, such as in reporting or data warehousing.
+

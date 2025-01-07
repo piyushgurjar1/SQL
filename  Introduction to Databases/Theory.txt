@@ -1,0 +1,32 @@
+Introduction to Databases
+
+History & Evolution of Databases
+- 1960s-1970s: Flat files and simple data storage.
+- 1970s: Introduction of the Relational Model.
+- 1980s-1990s: Rise of SQL databases like MySQL, Oracle, and MS SQL Server.
+- 2000s: Emergence of NoSQL databases (like MongoDB, Cassandra) to handle big data and more complex use cases.
+
+Types of Databases
+1. Relational Databases (SQL)
+   - Data is stored in tables (rows and columns).
+   - Uses Structured Query Language (SQL) to interact with data.
+   - Examples: MySQL, PostgreSQL, SQLite.
+   - Best for: Structured data and transactions (banking, e-commerce).
+
+2. Non-Relational Databases (NoSQL)
+   - Data is stored in key-value pairs, documents, graphs, etc.
+   - More flexible than relational databases.
+   - Example: MongoDB.
+   - Best for: Unstructured data, high scalability, and big data applications.
+
+What is a DBMS?
+A Database Management System (DBMS) is software that helps you create, manage, and interact with databases.
+- It helps store data securely.
+- Manages access, ensuring data is consistent, accurate, and available when needed.
+Examples of DBMS: MySQL, MongoDB, Oracle.
+
+SQL vs. NoSQL
+- SQL: Structured, uses tables, predefined schemas. Works best for complex queries and transactions.
+  - Use SQL if we need consistent, relational data.
+- NoSQL: Flexible schema, works great for large-scale data that doesn't fit properly into tables.
+  - Use NoSQL if we need scalability and flexibility.

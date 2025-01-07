@@ -1,0 +1,8 @@
+ Data Control Language (DCL): 
+   - GRANT: Gives a user permission to access or modify data.
+     Example: 
+       GRANT SELECT, INSERT ON users TO 'Piyush';
+
+   - REVOKE: Removes a user's permission to access or modify data.
+     Example: 
+       REVOKE SELECT ON users FROM 'Piyush';

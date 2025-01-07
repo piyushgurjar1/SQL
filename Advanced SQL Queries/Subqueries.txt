@@ -1,0 +1,14 @@
+Subqueries and Correlated Subqueries
+   - Subquery: A query inside another query that returns a single value or set of values.
+     Example :
+       SELECT name, salary
+       FROM employees
+       WHERE department_id = (SELECT id FROM departments WHERE name = 'Sales');
+       -- Finds employees who work in the 'Sales' department.
+
+   - Correlated Subquery: A subquery that references a column from the outer query.
+     Example :
+       SELECT e.name, e.salary
+       FROM employees e
+       WHERE e.salary > (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id);
+       -- Retrieves employees whose salary is above the average salary in their department.

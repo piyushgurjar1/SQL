@@ -1,0 +1,35 @@
+Joins: Inner, Outer (Left, Right, Full), Cross Joins
+   - Inner Join: Returns records that have matching values in both tables.
+     Example (Real-World):
+       SELECT orders.id, customers.name
+       FROM orders
+       INNER JOIN customers ON orders.customer_id = customers.id;
+       -- Retrieves all orders with corresponding customer names.
+
+   - Left Join: Returns all records from the left table, and matched records from the right table.
+     Example (Real-World):
+       SELECT customers.name, orders.id
+       FROM customers
+       LEFT JOIN orders ON customers.id = orders.customer_id;
+       -- Retrieves all customers, including those with no orders.
+
+   - Right Join: Returns all records from the right table, and matched records from the left table.
+     Example (Real-World):
+       SELECT employees.name, departments.department_name
+       FROM employees
+       RIGHT JOIN departments ON employees.department_id = departments.id;
+       -- Retrieves all departments, including those with no employees.
+
+   - Full Join: Returns all records when there’s a match in either left or right table.
+     Example (Real-World):
+       SELECT employees.name, projects.project_name
+       FROM employees
+       FULL JOIN projects ON employees.project_id = projects.id;
+       -- Retrieves all employees and all projects, matching where possible.
+
+   - Cross Join: Returns the Cartesian product of two tables (every combination of rows).
+     Example (Real-World):
+       SELECT products.name, promotions.promo_name
+       FROM products
+       CROSS JOIN promotions;
+       -- Combines every product with every promotion.
